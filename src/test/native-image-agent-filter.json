@@ -1,0 +1,13 @@
+{
+  "rules": [
+    {
+      "includeClasses": "**"
+    },
+    {
+      "excludeClasses": "me.lucko.**"
+    },
+    {
+      "excludeClasses": "net.mythicisland.spark.minestom.lib.**"
+    }
+  ]
+}

@@ -5,6 +5,7 @@ plugins {
     alias(libs.plugins.kotlin.jvm)
     alias(libs.plugins.shadow)
     alias(libs.plugins.kraken)
+    alias(libs.plugins.graalvm.native)
 }
 
 group = "net.mythicisland.spark"
@@ -16,7 +17,7 @@ repositories {
     maven("https://repo.lucko.me/")
 }
 
-val shade: Configuration by configurations.creating
+val shade: Configuration = configurations.create("shade")
 
 configurations.compileOnly {
     extendsFrom(shade)
@@ -30,6 +31,16 @@ dependencies {
         exclude(group = "me.lucko", module = "bytesocks-java-client")
     }
     shade(libs.bytesocks.java.client.j11)
+
+    testImplementation(libs.minestom)
+    testImplementation(libs.kotlin.test)
+    testImplementation(platform(libs.junit.bom))
+    testRuntimeOnly(libs.junit.platform.launcher)
+}
+
+sourceSets.test {
+    compileClasspath = files(tasks.shadowJar) + configurations.testCompileClasspath.get()
+    runtimeClasspath = output + files(tasks.shadowJar) + configurations.testRuntimeClasspath.get()
 }
 
 kotlin {
@@ -43,6 +54,10 @@ kotlin {
 
 java {
     toolchain.languageVersion.set(JavaLanguageVersion.of(25))
+}
+
+tasks.test {
+    useJUnitPlatform()
 }
 
 tasks.jar {
@@ -77,8 +92,30 @@ tasks.shadowJar {
     exclude("macos/**")
 }
 
-centralPortal {
-    jarTask = tasks.shadowJar
+graalvmNative {
+    toolchainDetection = false
+
+    metadataRepository {
+        enabled = true
+    }
+
+    agent {
+        defaultMode = "standard"
+        callerFilterFiles.from("src/test/native-image-agent-filter.json")
+        accessFilterFiles.from("src/test/native-image-agent-filter.json")
+    }
+
+    binaries.named("test") {
+        javaLauncher = javaToolchains.launcherFor {
+            languageVersion = JavaLanguageVersion.of(25)
+            nativeImageCapable = true
+        }
+        resources.autodetect()
+        buildArgs.addAll(
+            "--enable-url-protocols=http,https",
+            "-H:+ReportExceptionStackTraces",
+        )
+    }
 }
 
 maven {

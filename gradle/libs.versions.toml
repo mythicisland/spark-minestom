@@ -5,6 +5,7 @@ kotlin = "2.4.21"
 # Plugins
 shadow = "9.6.1"
 kraken = "1.1.1"
+graalvm-native = "1.1.19"
 
 # Minestom
 minestom = "26_3-SNAPSHOT"
@@ -17,6 +18,9 @@ bytesocks = "1.0-SNAPSHOT"
 guava = "33.8.0-jre"
 slf4j = "2.0.20"
 
+# Testing
+junit = "6.1.3"
+
 [libraries]
 minestom = { module = "net.minestom:minestom", version.ref = "minestom" }
 spark-common = { module = "me.lucko:spark-common", version.ref = "spark" }
@@ -24,7 +28,13 @@ bytesocks-java-client-j11 = { module = "me.lucko:bytesocks-java-client-j11", ver
 guava = { module = "com.google.guava:guava", version.ref = "guava" }
 slf4j-api = { module = "org.slf4j:slf4j-api", version.ref = "slf4j" }
 
+# Testing
+kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test" }
+junit-bom = { module = "org.junit:junit-bom", version.ref = "junit" }
+junit-platform-launcher = { module = "org.junit.platform:junit-platform-launcher" }
+
 [plugins]
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
 shadow = { id = "com.gradleup.shadow", version.ref = "shadow" }
 kraken = { id = "dev.xxjanisxx.kraken", version.ref = "kraken" }
+graalvm-native = { id = "org.graalvm.buildtools.native", version.ref = "graalvm-native" }
