@@ -1,0 +1,291 @@
+{
+  "reflection": [
+    {
+      "type": "me.lucko.spark.api.SparkProvider",
+      "methods": [
+        {
+          "name": "set",
+          "parameterTypes": [
+            "me.lucko.spark.api.Spark"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "me.lucko.spark.common.heapdump.HeapDumpSummary$DiagnosticCommandMXBean"
+    },
+    {
+      "type": "me.lucko.spark.common.monitor.cpu.CpuMonitor$OperatingSystemMXBean"
+    },
+    {
+      "type": "me.lucko.spark.common.monitor.memory.SystemMemoryInfo$OperatingSystemMXBean"
+    },
+    {
+      "type": "me.lucko.spark.proto.SparkHeapProtos$HeapData",
+      "allDeclaredFields": true
+    },
+    {
+      "type": "me.lucko.spark.proto.SparkHeapProtos$HeapEntry",
+      "allDeclaredFields": true
+    },
+    {
+      "type": "me.lucko.spark.proto.SparkHeapProtos$HeapMetadata",
+      "allDeclaredFields": true
+    },
+    {
+      "type": "me.lucko.spark.proto.SparkProtos$AveragesMetricSeries",
+      "allDeclaredFields": true
+    },
+    {
+      "type": "me.lucko.spark.proto.SparkProtos$CommandSenderMetadata",
+      "allDeclaredFields": true
+    },
+    {
+      "type": "me.lucko.spark.proto.SparkProtos$DoubleMetricSeries",
+      "allDeclaredFields": true
+    },
+    {
+      "type": "me.lucko.spark.proto.SparkProtos$HealthData",
+      "allDeclaredFields": true
+    },
+    {
+      "type": "me.lucko.spark.proto.SparkProtos$HealthMetadata",
+      "allDeclaredFields": true
+    },
+    {
+      "type": "me.lucko.spark.proto.SparkProtos$MemoryUsage",
+      "allDeclaredFields": true
+    },
+    {
+      "type": "me.lucko.spark.proto.SparkProtos$MemoryUsageMetricSeries",
+      "allDeclaredFields": true
+    },
+    {
+      "type": "me.lucko.spark.proto.SparkProtos$Metrics",
+      "allDeclaredFields": true
+    },
+    {
+      "type": "me.lucko.spark.proto.SparkProtos$PlatformMetadata",
+      "allDeclaredFields": true
+    },
+    {
+      "type": "me.lucko.spark.proto.SparkProtos$PlatformStatistics",
+      "allDeclaredFields": true
+    },
+    {
+      "type": "me.lucko.spark.proto.SparkProtos$PlatformStatistics$Gc",
+      "allDeclaredFields": true
+    },
+    {
+      "type": "me.lucko.spark.proto.SparkProtos$PlatformStatistics$Memory",
+      "allDeclaredFields": true
+    },
+    {
+      "type": "me.lucko.spark.proto.SparkProtos$PlatformStatistics$Memory$MemoryPool",
+      "allDeclaredFields": true
+    },
+    {
+      "type": "me.lucko.spark.proto.SparkProtos$PlatformStatistics$Mspt",
+      "allDeclaredFields": true
+    },
+    {
+      "type": "me.lucko.spark.proto.SparkProtos$PlatformStatistics$Ping",
+      "allDeclaredFields": true
+    },
+    {
+      "type": "me.lucko.spark.proto.SparkProtos$PlatformStatistics$Tps",
+      "allDeclaredFields": true
+    },
+    {
+      "type": "me.lucko.spark.proto.SparkProtos$PluginOrModMetadata",
+      "allDeclaredFields": true
+    },
+    {
+      "type": "me.lucko.spark.proto.SparkProtos$RollingAverageValues",
+      "allDeclaredFields": true
+    },
+    {
+      "type": "me.lucko.spark.proto.SparkProtos$SocketChannelInfo",
+      "allDeclaredFields": true
+    },
+    {
+      "type": "me.lucko.spark.proto.SparkProtos$SystemStatistics",
+      "allDeclaredFields": true
+    },
+    {
+      "type": "me.lucko.spark.proto.SparkProtos$SystemStatistics$Cpu",
+      "allDeclaredFields": true
+    },
+    {
+      "type": "me.lucko.spark.proto.SparkProtos$SystemStatistics$Cpu$Usage",
+      "allDeclaredFields": true
+    },
+    {
+      "type": "me.lucko.spark.proto.SparkProtos$SystemStatistics$Disk",
+      "allDeclaredFields": true
+    },
+    {
+      "type": "me.lucko.spark.proto.SparkProtos$SystemStatistics$Gc",
+      "allDeclaredFields": true
+    },
+    {
+      "type": "me.lucko.spark.proto.SparkProtos$SystemStatistics$Java",
+      "allDeclaredFields": true
+    },
+    {
+      "type": "me.lucko.spark.proto.SparkProtos$SystemStatistics$Jvm",
+      "allDeclaredFields": true
+    },
+    {
+      "type": "me.lucko.spark.proto.SparkProtos$SystemStatistics$Memory",
+      "allDeclaredFields": true
+    },
+    {
+      "type": "me.lucko.spark.proto.SparkProtos$SystemStatistics$Memory$MemoryPool",
+      "allDeclaredFields": true
+    },
+    {
+      "type": "me.lucko.spark.proto.SparkProtos$SystemStatistics$NetInterface",
+      "allDeclaredFields": true
+    },
+    {
+      "type": "me.lucko.spark.proto.SparkProtos$SystemStatistics$Os",
+      "allDeclaredFields": true
+    },
+    {
+      "type": "me.lucko.spark.proto.SparkProtos$WindowStatistics",
+      "allDeclaredFields": true
+    },
+    {
+      "type": "me.lucko.spark.proto.SparkProtos$WorldInfoMetricSeries",
+      "allDeclaredFields": true
+    },
+    {
+      "type": "me.lucko.spark.proto.SparkProtos$WorldInfoMetricSeries$Values",
+      "allDeclaredFields": true
+    },
+    {
+      "type": "me.lucko.spark.proto.SparkProtos$WorldStatistics",
+      "allDeclaredFields": true
+    },
+    {
+      "type": "me.lucko.spark.proto.SparkProtos$WorldStatistics$Chunk",
+      "allDeclaredFields": true
+    },
+    {
+      "type": "me.lucko.spark.proto.SparkProtos$WorldStatistics$DataPack",
+      "allDeclaredFields": true
+    },
+    {
+      "type": "me.lucko.spark.proto.SparkProtos$WorldStatistics$GameRule",
+      "allDeclaredFields": true
+    },
+    {
+      "type": "me.lucko.spark.proto.SparkProtos$WorldStatistics$Region",
+      "allDeclaredFields": true
+    },
+    {
+      "type": "me.lucko.spark.proto.SparkProtos$WorldStatistics$World",
+      "allDeclaredFields": true
+    },
+    {
+      "type": "me.lucko.spark.proto.SparkSamplerProtos$SamplerData",
+      "allDeclaredFields": true
+    },
+    {
+      "type": "me.lucko.spark.proto.SparkSamplerProtos$SamplerMetadata",
+      "allDeclaredFields": true
+    },
+    {
+      "type": "me.lucko.spark.proto.SparkSamplerProtos$SamplerMetadata$DataAggregator",
+      "allDeclaredFields": true
+    },
+    {
+      "type": "me.lucko.spark.proto.SparkSamplerProtos$SamplerMetadata$ThreadDumper",
+      "allDeclaredFields": true
+    },
+    {
+      "type": "me.lucko.spark.proto.SparkSamplerProtos$StackTraceNode",
+      "allDeclaredFields": true
+    },
+    {
+      "type": "me.lucko.spark.proto.SparkSamplerProtos$ThreadNode",
+      "allDeclaredFields": true
+    },
+    {
+      "type": "me.lucko.spark.proto.SparkWebSocketProtos$ClientConnect",
+      "allDeclaredFields": true
+    },
+    {
+      "type": "me.lucko.spark.proto.SparkWebSocketProtos$ClientPing",
+      "allDeclaredFields": true
+    },
+    {
+      "type": "me.lucko.spark.proto.SparkWebSocketProtos$PacketWrapper",
+      "allDeclaredFields": true
+    },
+    {
+      "type": "me.lucko.spark.proto.SparkWebSocketProtos$RawPacket",
+      "allDeclaredFields": true
+    },
+    {
+      "type": "me.lucko.spark.proto.SparkWebSocketProtos$ServerConnectResponse",
+      "allDeclaredFields": true
+    },
+    {
+      "type": "me.lucko.spark.proto.SparkWebSocketProtos$ServerConnectResponse$Settings",
+      "allDeclaredFields": true
+    },
+    {
+      "type": "me.lucko.spark.proto.SparkWebSocketProtos$ServerPong",
+      "allDeclaredFields": true
+    },
+    {
+      "type": "me.lucko.spark.proto.SparkWebSocketProtos$ServerUpdateSamplerData",
+      "allDeclaredFields": true
+    },
+    {
+      "type": "me.lucko.spark.proto.SparkWebSocketProtos$ServerUpdateStatistics",
+      "allDeclaredFields": true
+    },
+    {
+      "type": "net.mythicisland.spark.minestom.lib.protobuf.DescriptorMessageInfoFactory"
+    },
+    {
+      "type": "net.mythicisland.spark.minestom.lib.protobuf.GeneratedMessage"
+    },
+    {
+      "type": "net.mythicisland.spark.minestom.lib.protobuf.ListFieldSchemaFull"
+    },
+    {
+      "type": "net.mythicisland.spark.minestom.lib.protobuf.MapFieldSchemaFull"
+    },
+    {
+      "type": "net.mythicisland.spark.minestom.lib.protobuf.NewInstanceSchemaFull"
+    },
+    {
+      "type": "net.mythicisland.spark.minestom.lib.protobuf.UnknownFieldSetSchema"
+    },
+    {
+      "type": {
+        "proxy": [
+          "me.lucko.spark.common.heapdump.HeapDumpSummary$DiagnosticCommandMXBean"
+        ]
+      }
+    },
+    {
+      "type": {
+        "proxy": [
+          "me.lucko.spark.common.monitor.cpu.CpuMonitor$OperatingSystemMXBean"
+        ]
+      }
+    },
+    {
+      "type": {
+        "proxy": [
+          "me.lucko.spark.common.monitor.memory.SystemMemoryInfo$OperatingSystemMXBean"
+        ]
+      }
+    }
+  ]
+}
