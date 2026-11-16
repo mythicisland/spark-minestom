@@ -32,15 +32,11 @@ dependencies {
     }
     shade(libs.bytesocks.java.client.j11)
 
+    testImplementation(files(tasks.shadowJar))
     testImplementation(libs.minestom)
     testImplementation(libs.kotlin.test)
     testImplementation(platform(libs.junit.bom))
     testRuntimeOnly(libs.junit.platform.launcher)
-}
-
-sourceSets.test {
-    compileClasspath = files(tasks.shadowJar) + configurations.testCompileClasspath.get()
-    runtimeClasspath = output + files(tasks.shadowJar) + configurations.testRuntimeClasspath.get()
 }
 
 kotlin {
